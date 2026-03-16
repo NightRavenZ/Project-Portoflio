@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Gem" load_steps=3 format=3 uid="uid://0nsd8yi114ut"]
+
+[ext_resource type="Texture2D" uid="uid://hxndn68l4vcr" path="res://Assets/Sprites/Foozle_2DE0002_Lucifer_Effects_Pixel_Art/Effects/Pickup effects/Png/Gem Pickup effect.png" id="1_7t0t3"]
+[ext_resource type="Script" uid="uid://birautjdynqap" path="res://Assets/Scripts/EXP.gd" id="2_osgw5"]
+
+[resource]
+script = ExtResource("2_osgw5")
+XP = 1.0
+title = "Gem"
+icon = ExtResource("1_7t0t3")
+description = "Gains Exp"
+metadata/_custom_type_script = "uid://birautjdynqap"

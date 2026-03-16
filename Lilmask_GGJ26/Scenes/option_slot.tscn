@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://1a8kdiimu5v"]
+
+[ext_resource type="Texture2D" uid="uid://i4bkxcso5s5c" path="res://Assets/Sprites/Foozle_2DE0002_Lucifer_Effects_Pixel_Art/Effects/Wave/Small/Right/WaveSmallRIght.png" id="1_1dskj"]
+[ext_resource type="Script" uid="uid://f5etnnxaswb0" path="res://Assets/Scripts/option_slot.gd" id="2_mlmxm"]
+[ext_resource type="Texture2D" uid="uid://djfx2ubajjqrn" path="res://Assets/Sprites/GUI-Kit-Pack-Free_56.png" id="3_14i3o"]
+
+[node name="OptionSlot" type="TextureButton"]
+process_mode = 3
+custom_minimum_size = Vector2(315, 40)
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+texture_normal = ExtResource("1_1dskj")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("2_mlmxm")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 9.0
+offset_right = 93.0
+offset_bottom = 32.0
+text = "Lvl 2"
+
+[node name="Desc" type="Label" parent="."]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 10.0
+offset_right = 240.0
+offset_bottom = 33.0
+text = "Test"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+show_behind_parent = true
+custom_minimum_size = Vector2(315, 0)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_14i3o")
+region_rect = Rect2(-6.5, -9.83331, 50, 73.3333)
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

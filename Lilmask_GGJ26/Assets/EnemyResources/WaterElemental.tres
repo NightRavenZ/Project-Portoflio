@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://cb1ijcn825hpy"]
+
+[ext_resource type="Script" uid="uid://u310xkrlxu8u" path="res://Assets/Scripts/pickupResources.gd" id="1_hh2fp"]
+[ext_resource type="Script" uid="uid://c0b61fyqgo4vq" path="res://Assets/Scripts/EnemyType.gd" id="1_j3wb5"]
+[ext_resource type="Resource" uid="uid://0nsd8yi114ut" path="res://Assets/Resources/GemXp.tres" id="2_dd2hy"]
+[ext_resource type="Texture2D" uid="uid://c0agap4hmqn62" path="res://Assets/Sprites/WaterElemental.png" id="2_gpmsm"]
+
+[resource]
+script = ExtResource("1_j3wb5")
+title = "WaterElemental"
+texture = ExtResource("2_gpmsm")
+health = 3.0
+damage = 3.0
+drops = Array[ExtResource("1_hh2fp")]([ExtResource("2_dd2hy")])
+metadata/_custom_type_script = "uid://c0b61fyqgo4vq"

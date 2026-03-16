@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ced7ueknoi3g8"]
+
+[ext_resource type="Script" uid="uid://tvekd7egls57" path="res://Assets/Scripts/enemyOne.gd" id="1_7grb1"]
+[ext_resource type="Texture2D" uid="uid://cbdd1xjgslh0q" path="res://Assets/Sprites/FireElemental.png" id="2_jqjm3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iq5fn"]
+radius = 8.0
+
+[node name="EnemyOne" type="CharacterBody2D" groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_7grb1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_jqjm3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 2)
+shape = SubResource("CircleShape2D_iq5fn")

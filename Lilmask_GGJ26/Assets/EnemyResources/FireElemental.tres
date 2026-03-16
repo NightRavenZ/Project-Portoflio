@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://r5duri2kobbo"]
+
+[ext_resource type="Script" uid="uid://c0b61fyqgo4vq" path="res://Assets/Scripts/EnemyType.gd" id="1_huqbj"]
+[ext_resource type="Script" uid="uid://u310xkrlxu8u" path="res://Assets/Scripts/pickupResources.gd" id="1_pd5wt"]
+[ext_resource type="Resource" uid="uid://0nsd8yi114ut" path="res://Assets/Resources/GemXp.tres" id="2_fn3xu"]
+[ext_resource type="Texture2D" uid="uid://cbdd1xjgslh0q" path="res://Assets/Sprites/FireElemental.png" id="2_huqbj"]
+
+[resource]
+script = ExtResource("1_huqbj")
+title = "FireElemental"
+texture = ExtResource("2_huqbj")
+health = 3.0
+damage = 2.0
+drops = Array[ExtResource("1_pd5wt")]([ExtResource("2_fn3xu")])
+metadata/_custom_type_script = "uid://c0b61fyqgo4vq"
